@@ -15,5 +15,13 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
 }
