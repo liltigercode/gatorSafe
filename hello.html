@@ -1,6 +1,86 @@
 <html>
+  <head>
+     <link href="style.css" type="css"/>
+     <link href="action.js" type="javascript"/>
+    
+  </head>
   <body>
-    <h1>Hello Extensions</h1>
     <script src="popup.js"></script>
+    <div id="intro">
+  <button id="new">Create new Wallet</button>
+  <button id="exst">Import existing Wallet</button>
+</div>
+<div id="lognew">
+  <p id="label">Enter Password</p>
+  <input type="password" id="pin" />
+  <p id="label">Re Enter Password</p>
+  <input type="password" id="pin2" />
+  <input type="hidden" id="session"/>
+  <button id="setpin">Set Password</button>
+</div>
+<div id="log">
+  <p id="label">Enter Password</p>
+  <input type="password" id="pin" />
+  <input type="hidden" id="session"/>
+  <button id="setpin">Login</button>
+</div>
+<div id="seedbox">
+  <p id="sp">Enter your seedphrase :</p>
+<div id="phrase">
+  <input id="word1" placeholder="Word 1" class="seed"/>
+  <input id="word2" placeholder="Word 2" class="seed"/>
+  <input id="word3" placeholder="Word 3" class="seed"/>
+  <input id="word4" placeholder="Word 4" class="seed"/>
+  <input id="word5" placeholder="Word 5" class="seed"/>
+  <input id="word6" placeholder="Word 6" class="seed"/>
+  <input id="word7" placeholder="Word 7" class="seed"/>
+  <input id="word8" placeholder="Word 8" class="seed"/>
+    <input id="word9" placeholder="Word 9" class="seed"/>
+  <input id="word10" placeholder="Word 10" class="seed"/>
+  <input id="word11" placeholder="Word 11" class="seed"/>
+  <input id="word12" placeholder="Word 12" class="seed"/>
+  <button id="import">Import Wallet</button>
+  </div>
+</div>
+<div id="newseedbox">
+  <p id="sp"Your New seedphrase :</p>
+<div id="phrase">
+  <input id="word1" value="yellow" class="seed"/>
+  <input id="word2" value="fast" class="seed"/>
+  <input id="word3" value="total" class="seed"/>
+  <input id="word4" value="rain" class="seed"/>
+  <input id="word5" value="card" class="seed"/>
+  <input id="word6" value="speed" class="seed"/>
+  <input id="word7" value="future" class="seed"/>
+  <input id="word8" value="cloud" class="seed"/>
+    <input id="word9" value="saddle" class="seed"/>
+  <input id="word10" value="widow" class="seed"/>
+  <input id="word11" value="couch" class="seed"/>
+  <input id="word12" value="speaker" class="seed"/>
+  <button id="copy">Copy to Clipboard</button>
+  </div>
+</div>
+<div id="alert1">
+  NOT YOUR SEED, NOT YOUR CRYPTO<br/>
+  <p id="blue">If you forget / loose access to your Seedphrase you lose access to your funds. And anyone with access to your Seedphrase has access to your funds.</p>
+  <button id="next">NEXT ></button>
+</div>
+<div id="alert2">
+  EVERY ACCOUNT HAS A SEED, EVERY WALLET HAS A KEY<br/><p id="blue">
+  Your Seedphrase gives you access to all private keys on the Account while a Private Key only gives access to the attached Wallet address inside the Account.</p>
+  <button id="next">NEXT ></button>
+</div>
+<div id="alert3">
+  WATCH WHAT YOU APPROVE AND SIGN<br/><p id="blue">
+Approving a Wallet or Contract to move your Funds allows them to spend the approved amount freely until you revoke the approval.</p>
+  <button id="next">NEXT ></button>
+</div>
+<div id="pkbox">
+  <p id="pk">Enter your private key :</p>
+<div id="keys">
+  <textarea id="pkey" class="privkey" placeholder="Your private key goes here ..."></textarea>
+  <button id="import">Import Wallet</button>
+  </div>
+</div>
   </body>
 </html>
